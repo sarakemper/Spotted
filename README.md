@@ -1,1 +1,1 @@
-"Website that allows users to apply do different modelling agencies"
+"Website that allows users to apply to different modelling agencies"
