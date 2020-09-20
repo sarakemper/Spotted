@@ -1,0 +1,134 @@
+.upload{
+    height: 100vh;
+}
+
+.upload-navbar{
+    align-self: end;
+    display: grid;
+    grid-template-columns: auto 66% auto;
+    align-items: center;
+    text-align: center;
+    box-sizing: content-box;
+    margin-top: 30px;
+
+}
+
+.upload .button{
+    -webkit-tap-highlight-color: transparent;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color:  grey;
+
+}
+
+.upload .button:hover, .upload .button:focus{
+    color: black;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.upload-title{
+    align-self: end;
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 29px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.full-length{
+    align-self: center;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-align: center;
+    /* border: 3px solid blue; */
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    -webkit-tap-highlight-color: transparent;
+    justify-self: center;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: #EFEFEF;
+    color: black;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover, .custom-file-upload:focus{
+    background-color: black;
+    color: white;
+} 
+
+.upload .title{
+    margin-bottom: 10px;
+}
+
+.upload .submit{
+    align-self: end;
+    -webkit-tap-highlight-color: transparent;
+    color: black;
+    width: 300px;
+    height: 45px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    /* background-color: white; */
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.upload-instructions-description{
+    font-family: 'Roboto';
+    text-align: center;  
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: black;
+    margin: 40px;
+}
+
+.upload .submit:hover {
+    background-color: black;
+    transform: translateY(-7px);
+    border: none;
+    color: white;
+  }
+
+  .upload .centerSubmit{
+      align-self: center;
+      justify-self: center;
+
+  }

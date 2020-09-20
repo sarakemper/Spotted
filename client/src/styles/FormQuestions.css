@@ -1,0 +1,274 @@
+
+.name, .gender, .height, .age {
+    width: 100vw;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 30% 10%;
+    box-sizing: content-box;
+
+}
+
+.height, .age{
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 10% 15%;
+}
+
+.gender{
+    grid-template-rows: 20% 12% 60% 25%;
+    text-align: center
+}
+
+.height{
+    grid-template-rows: 10% 14%;
+}
+
+
+.question{
+    align-self: end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    color: grey;
+    justify-self: center;
+}
+
+.gender .link{
+    align-self: end;
+}
+
+.nameTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600
+
+}
+
+form{
+    display: grid;
+}
+
+.name form {
+    height: 40vh;
+    grid-template-rows: 10% auto;
+}
+
+.height form, .age form{
+    height: 50vh;
+    grid-template-rows: 8% 12% 55%
+}
+
+.age form {
+    justify-items: center;
+}
+
+.height form .group div {
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name input[type=text]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    align-self: start;
+    justify-self: center;
+    padding: 8px 0px 8px 6px;
+    border: 2px solid;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.name ::placeholder{
+    color: lightgrey;
+    font-size: 12px;
+}
+
+.name input[type=text]:focus, .name input[type=text]:hover{
+    -webkit-tap-highlight-color: transparent;
+
+    border: 2px solid;
+}
+
+.height input[type=text], .age input[type=text]{
+    -webkit-tap-highlight-color: transparent;
+
+    text-align: center;
+    width: 30px;
+    border: none;
+    border-bottom: 2px solid;
+    font-family: 'Roboto';
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.height ::placeholder,.age ::placeholder{
+    align-self: center;
+    color: lightgrey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.gender-button{
+    -webkit-tap-highlight-color: transparent;
+
+
+    align-self: end;
+    justify-self: center;
+    width: 60%;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+
+}
+
+ .gender-button:hover, .gender-button:focus {
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0px 5px 10px rgb(168, 166, 166);
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+
+.continue{
+    -webkit-tap-highlight-color: transparent;
+    color: white;
+    align-self: end;
+    justify-self: center;
+    width: 200px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    background-color: blue;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.continue:hover {
+    background-color: black;
+    box-shadow: 0px 15px 20px rgb(168, 166, 166);
+    transform: translateY(-7px);
+  }
+
+  .invalid{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    color: red;
+    justify-self: center;
+
+  }
+
+  .gender-button:focus{
+      border: none;
+  }
+
+  @media (max-width: 479px) {
+
+    
+    .name, .height, .age{
+        grid-template-rows: 30% 15%;
+    }
+
+    .height input[type=text], .age input[type = text]{
+        border-radius: 0px;
+        width: 40px;
+    }
+
+    .name input[type = text]{
+        border-radius: 0px;
+    }
+
+    .height, .age{
+        margin-top: 0px;
+    }
+
+
+    .height form, .age form{
+        grid-template-rows: 10% 15% 20%;
+
+    }
+
+
+    .name form {
+        height: 20vh;
+        grid-template-rows: 18% 60%;
+    }
+
+    .gender{
+        grid-template-rows: 10% 10% 45% 20%;
+    }
+
+
+  }
+
+  @media (min-width: 1259px){
+
+    .name{
+        grid-template-rows: 30% 15% 80%;
+    }
+    .nameTitle{
+      font-size: 35px;
+    }
+
+    .question{
+        font-size: 15px;
+    }
+
+    .name input[type=text]{
+        padding: 12px 0px 12px 20px;
+        font-size: 20px;
+    }
+
+    .invalid{
+        font-size: 15px;
+
+    }
+
+    .gender-button{
+        font-size: 15px;
+    }
+
+
+
+}

@@ -1,0 +1,90 @@
+.formNavBar{
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 5% 30% 60%;
+    box-sizing: content-box;
+}
+
+
+.row{
+    align-self: end;
+    display: grid;
+    grid-template-columns: auto 66% auto;
+    align-items: center;
+    text-align: center;
+    box-sizing: content-box;
+
+}
+
+
+.backButton{
+    -webkit-tap-highlight-color: transparent;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: gre;
+}
+
+.backButton:hover, .backButton:focus {
+    background-color: none;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.formNavBar .logo{
+    box-sizing: content-box;
+
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-right: 50px;
+}
+
+.outer-bar{
+    align-self: end;
+    justify-self: center;
+    width: 80%;
+    height: 15px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.inner-bar{
+    height: 15px;
+    background-color: rgb(57, 57, 252);
+    border-radius: 20px;
+}
+
+@media (max-width: 479px) {
+    .backButton:focus{
+        background-color: white;
+        color: black;
+    }
+
+    .formNavBar{
+        margin-top: 20px;
+    }
+
+    .outer-bar, .inner-bar{
+        width: 0%;
+        height: 0px;
+    }
+
+      .row{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    } 
+
+    .formNavBar .logo{
+        padding-right: 0px;
+    } 
+   
+  }

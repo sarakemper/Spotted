@@ -1,0 +1,81 @@
+html, body{
+  overflow:hidden;
+}
+
+ .home {
+  height: 100vh;
+  width: 98vw;
+  display: grid;
+  grid-template-rows: 10% 40% 30%;
+
+} 
+
+.container {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150px;
+  margin-top: 250px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  align-self: end;
+  text-align: center;
+
+}
+
+.link{
+  justify-self: center;
+  align-self: center;
+}
+
+.getSpotted {
+  -moz-appearance: none;
+      -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+        color: white;
+        width: 200px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+  }
+
+.getSpotted:hover, .getSpotted:focus {
+  background-color: blue;
+  box-shadow: 0px 15px 20px rgb(168, 166, 166);
+}
+
+@media (max-width: 540px) {
+  .container{
+      font-size: 70px;
+  }
+  .title{
+    padding-left: 0px;
+  }
+
+  .home{
+    height: 100vh;
+    grid-template-rows: 10% 25% 20%;
+
+  }
+}
+
+@media (min-width: 1259px){
+  .container{
+    font-size: 200px;
+}
+
+.getSpotted{
+  width: 250px;
+  height: 60px;
+  font-size: 15px;
+
+}
+
+}
